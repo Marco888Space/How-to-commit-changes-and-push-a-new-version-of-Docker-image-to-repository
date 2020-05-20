@@ -31,7 +31,7 @@ docker push REPOSITORY/IMAGE_NAME:NEW_TAG_NAME
 docker rm $(docker ps -aq)
 ```
 
-7. Remove old version of the image
+7. Remove old version of the image:
 ```
 docker image rmi REPOSITORY_NAME/IMAGE_NAME:OLD_TAG_NAME
 ```
