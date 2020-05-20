@@ -5,11 +5,11 @@
 docker login --username=DOCKER_HUB_LOGIN
 ```
 
-2. Make some changes to image:
+2. Make some changes to image. For example:
 ```
 docker run --entrypoint=/bin/bash -it -v $PWD/somefolder/somefile.txt:/somefolder/somefile.txt REPOSITORY_NAME/IMAGE_NAME:OLD_TAG_NAME
 ```
-In this example we use "volume mounting" option to get acces to somefile.txt on our host machine from the inside of image.
+Here we use "volume mounting" option to get acces to somefile.txt on our host machine from the inside of image.
 
 3. When we are ready to commit changes to image, check the containers list:
 ```
