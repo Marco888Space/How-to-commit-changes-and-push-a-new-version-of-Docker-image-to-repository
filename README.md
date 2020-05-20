@@ -16,7 +16,7 @@ Here we use "volume mounting" option to get acces to somefile.txt on our host ma
 docker ps -a
 ```
 
-4. Copy the container id with the changes in it and the execute this command:
+4. Copy the container id with the changes in it and then execute this command:
 ```
 docker commit -m "CHANGE_LOG_MESSAGE" CONTAINER_ID_WITH_CHANGES REPOSITORY_NAME/IMAGE_NAME:NEW_TAG_NAME
 ```
