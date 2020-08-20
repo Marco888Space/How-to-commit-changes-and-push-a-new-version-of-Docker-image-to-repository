@@ -50,7 +50,8 @@ docker tag IMAGE_ID REPOSITORY_NAME/IMAGE_NAME:NEW_TAG_NAME
 ```
 docker run -p 5000:4000 -d REPOSITORY/IMAGE_NAME:TAG_NAME
 ```
-> Where 5000 is a host machine port that is mapped to 4000 - private port inside the container.
+> * 5000 is a host machine port that is mapped to 4000 - private port inside the container.
+> * -d option means "run in daemon mode".
 
 * Show application logs
 ```
