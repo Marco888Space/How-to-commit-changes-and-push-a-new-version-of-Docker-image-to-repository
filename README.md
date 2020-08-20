@@ -44,3 +44,20 @@ docker image rmi REPOSITORY_NAME/IMAGE_NAME:OLD_TAG_NAME
 ```
 docker tag IMAGE_ID REPOSITORY_NAME/IMAGE_NAME:NEW_TAG_NAME
 ```
+
+## General Docker commands you should know
+* Run Docker image in daemon mode using explicit port inside the container
+```
+docker run -p 5000:4000 -d REPOSITORY/IMAGE_NAME:TAG_NAME
+```
+> Where 5000 is a host machine port that is mapped to 4000 - private port inside the container.
+
+* Show application logs
+```
+docker logs CONTAINER_ID
+```
+
+* Stop Docker container
+```
+docker stop CONTAINER_ID
+```
