@@ -62,3 +62,13 @@ docker logs CONTAINER_ID
 ```
 docker stop CONTAINER_ID
 ```
+
+* Save Docker image to tar archive
+```
+docker save IMAGE_NAME > IMAGE_NAME.tar
+```
+
+* Extract and load Docker image from tar archive
+```
+docker load --input IMAGE_NAME.tar
+```
